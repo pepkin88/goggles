@@ -124,6 +124,7 @@ Shape.prototype.draw = function(ctx) {
     ctx.strokeStyle = "rgba("+this.r+","+this.g+","+this.b+","+this.a+")";
     ctx.lineWidth = this.t;
     ctx.lineCap = "round";
+    ctx.lineJoin = "round";
     ctx.beginPath();
     ctx.moveTo.apply(ctx, this.p[0]);
     for (var i=0,l=this.p.length; i<l; i++) {
